@@ -110,3 +110,4 @@ resource "aws_route_table_association" "public_rta" {
   route_table_id = aws_route_table.public_rt.id
   count          = length(aws_subnet.public_subnets)
 }
+
